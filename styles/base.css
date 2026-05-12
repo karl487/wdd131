@@ -1,0 +1,149 @@
+/* Google Fonts */
+@import url('https://googleapis.com');
+
+:root {
+    --primary-color: #004a99;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-main: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    background-size: contain;
+    padding: 1rem;
+    text-align: center;
+    height: 50px;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    background-color: rgb(54, 53, 53);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+main {
+    
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+h2{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: black;
+    border-bottom: #333 3px solid;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 1rem auto 0;
+}
+.karl {
+    border-radius: 10%;
+    border: 3px solid var(--primary-color);
+    position: relative;
+    bottom: 190px;
+    left: 150px;
+}
+.p {
+    position: relative;
+    width: 350px;
+}
+.p2 {
+    position: relative;
+    width: 350px;
+    left: 150px;
+    
+}
+.flag {
+    position: relative;
+    border-radius: 10%;
+        border: 3px solid var(--primary-color);
+    right: 200px    ;
+    top: 170px;
+}
+.flag-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    position: relative;
+    right: 200px;
+    top: 170px;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Grid for Cards */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+        grid-column: 1 / -1;
+    }
+}
