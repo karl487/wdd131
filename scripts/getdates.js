@@ -1,12 +1,8 @@
-javascript// Dynamically populate the copyright year
-const currentYearSpan = document.getElementById("currentyear");
-if (currentYearSpan) {
-    const today = new Date();
-    currentYearSpan.textContent = today.getFullYear();
-}
+const currentYearElement = document.getElementById('currentyear');
+currentYearElement.textContent = new Date().getFullYear();
 
-// Dynamically populate the last modified date
-const lastModifiedElement = document.getElementById("lastModified");
-if (lastModifiedElement) {
-    lastModifiedElement.textContent = "Last Modification: " + document.lastModified;
-}
+const lastModifiedElement = document.getElementById('lastmodified');
+lastModifiedElement.textContent =  document.lastModified;
+
+
+        
