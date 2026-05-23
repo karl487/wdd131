@@ -3,61 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css/temples.css">
     <link rel="stylesheet" href="styles.css/temples-large.css">
-    <script src="scripts/temples.js"></script>
+    <script src="scripts/temples.js" defer></script>
 
     <title>temple album</title>
+
 </head>
 <body>
     <header>
         <h1>temple album</h1>
+        <button id="menu-toggle" aria-label="toggle navigation">☰</button>
+        
+        
         <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="old.html">Old</a></li>
-                <li><a href="new.html">New</a></li>
-                <li><a href="large.html">Large</a></li>
-                <li><a href="small.html">Small</a></li>
+            <ul >
+                <li><a href="home.html">home</a></li>
+                <li><a href="old.html">old</a></li>
+                <li><a href="new.html">new</a></li>
+                <li><a href="large.html">large</a></li>
+                <li><a href="small.html">small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Temple Album</h1>
+        <h1>home</h1>
+        <div class="grid-container">
+            <figure>
+                    <img src="images/church news.jpg" alt="Salt Lake Temple" width="150">
+                    <figcaption>salt lake temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/columbus ohio.jpg" alt="Columbus Ohio Temple" width="150">
+                    <figcaption>columbus ohio temple</figcaption>
 
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/latter-day.jpg" alt="Latter-day Saints Temple" width="150">
+                    <figcaption>latter-day saints temple</figcaption>
 
-        </figure>
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/los angeles carlifonia.jpg" alt="Los Angeles California Temple" width="150">
+                    <figcaption>los angeles california temple</figcaption>
 
-        </figure>
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/new york.jpg" alt="New York Temple" width="150">
+                    <figcaption>new york temple</figcaption>
 
-        </figure>
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/ogden utah temple.jpg" alt="Ogden Utah Temple" width="150">
+                    <figcaption>ogden utah temple</figcaption>
 
-        </figure>
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/salt lake tribune.jpg" alt="Salt Lake Tribune  Temple" width="150">
+                    <figcaption>salt lake tribune temple</figcaption>
 
-        </figure>
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/salt lake.jpg" alt="Salt Lake Temple" width="150">
+                    <figcaption>salt lake temple</figcaption>
 
-        </figure>
-        <figure>
+                </figure>
+                <figure>
+                    <img src="images/seoul korea.jpg" alt="Seoul Korea Temple" width="150">
+                    <figcaption>seoul korea temple</figcaption>
 
-        </figure>
-        <figure>
-
-        </figure>
-        <figure>
-
-        </figure>
-        <figure>
-            
-        </figure>
+                </figure>
+        </div>
+        
 
     </main>
     <footer>
+         <p>&copy; <span id="currentyear"></span> Karl Smith.  kenya</p>
+        <p>last modified: <span id="lastmodified"></span></p>
 
     </footer>
 </body>
