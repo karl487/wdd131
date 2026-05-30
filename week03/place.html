@@ -12,16 +12,49 @@
     <header>
         <h1>kenya</h1>
     </header>
-
-    <main>
+     <main class="hero-container">
+        <!-- Wrap in picture tag so source works correctly -->
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/pexels-image-noise-large.webp">
+            <source media="(min-width: 500px)" srcset="images/pexels-image-noise-medium.webp">
+            <img src="images/pexels-image-noise-small.webp" alt="Picture of Kenya" class="hero-image">
+        </picture>
         
-       <h2>data</h2>
+        <!-- Data Box -->
+        <div class="info-card data-box">
+            <h2>Data</h2>
+            <div class="card-content">
+                <p><strong>Area:</strong> 580,367 km&sup2;</p>
+                <p><strong>Population:</strong> 58 million</p>
+                <p><strong>Capital:</strong> Nairobi</p>
+                <p><strong>Languages:</strong> Swahili, English</p>
+                <p><strong>Currency:</strong> Kenyan Shillings</p>
+                <p><strong>Time Zone:</strong> GMT+3</p>
+                <p><strong>Calling Code:</strong> +254</p>
+                <p><strong>Internet TLD:</strong> .ke</p>
+            </div>
+        </div>
 
+        <!-- Weather Box -->
+        <div class="info-card weather-box">
+            <h2>Weather ☁️</h2>
+            <div class="card-content">
+                <p><strong>Temperature:</strong> 22&deg;C</p>
+                <p><strong>Wind:</strong> 8km/hr</p>
+                <p><strong>Condition:</strong> Cloudy</p>
+                <p><strong>Humidity:</strong> 75%</p>
+                <p><strong>Precipitation:</strong> 35%</p>
+            </div>
+        </div>
     </main>
 
     <footer>
-
+        <p>&copy; <span id="currentyear"></span> Karl Smith. Kenya</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
     </footer>
+    <script src="scripts/place.js" defer></script>
+
+   
     
 </body>
 </html>

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: red;
+    color: white;
+    text-transform: capitalize;
+
+}
+/* Container holding the layout elements */
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Stacks image, data, and weather vertically */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Image takes the full available width */
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card layout rules for full width */
+.info-card {
+    width: 100%; /* Forces cards to take full phone width */
+    background: #ffffff; 
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; /* Clean separation line */
+    box-sizing: border-box;
+}
+
+/* Header Labels inside cards */
+.info-card h2 {
+    margin: 0;
+    color: black;
+    background-color: white;
+    padding: 12px 16px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.data-box h2 {
+    background-color:white; /* Rich Green */
+}
+
+.weather-box h2 {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+/* Content typography spacing */
+.card-content {
+    padding: 12px 16px;
+}
+
+.card-content p {
+    margin: 8px 0;
+    font-size: 0.95rem; /* Larger, readable size for vertical text blocks */
+    line-height: 1.4;
+    border-bottom: 1px dashed #eaeaea; /* Optional: light split line between details */
+    padding-bottom: 4px;
+}
+
+.card-content p:last-child {
+    border-bottom: none; /* Removes bottom line from last text item */
+}
+
+/* Footer layout rules */
+footer {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+}

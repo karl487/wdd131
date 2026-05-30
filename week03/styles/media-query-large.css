@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    /* Set a maximum display size for desktop so it doesn't stretch infinitely */
+    .hero-container {
+        position: relative; /* Context for absolute positioning */
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* Change boxes to overlay on top of the image */
+    .info-card {
+        position: absolute;
+        width: 300px; /* Fixed width overlay cards */
+        background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+        border-radius: 4px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-bottom: none;
+    }
+
+    /* Position the Data Box top-left */
+    .data-box {
+        top: 40px;
+        left: 40px;
+    }
+
+    /* Position the Weather Box bottom-right */
+    .weather-box {
+        bottom: 40px;
+        right: 40px;
+    }
+
+    /* Clean up borders inside cards for desktop view */
+    .card-content p {
+        font-size: 0.9rem;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin: 6px 0;
+    }
+}
