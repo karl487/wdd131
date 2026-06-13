@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="karl-smith">
+    <meta name="description" content="a form that outlines product review information">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+    <title>product review</title>
+</head>
+<body>
+    <header>
+        <h1>product review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="wf2">
+            <fieldset>
+                <div class="product">
+                    <legend >
+                <label>product name
+                    <select name="product" >
+                        <option value="select">choose a product</option>
+                        <option value="samsung "> samsung a15</option>
+                        <option value="lamborghini">lamborghini galado</option>
+                        <option value="telly">vitron 45inch</option>
+                        <option value="laptop">nec laptop vesapro v15</option>
+                        <option value="iphone">iphone 17pro</option>
+                        <option value="shower">shower head</option>
+                        <option value="mouse">mouse</option>
+                        <option value="shoes">adidas</option>
+
+                    </select>
+                </label>
+            </legend> 
+                </div>
+                
+
+            </fieldset>
+            <fieldset>
+                <legend>overall rating
+                    <div>rating</div>
+                    
+
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9734;</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9734;&#9734;</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9734;&#9734;&#9734; </label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9734;&#9734;&#9734;&#9734; </label>
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734; </label>
+                </legend>
+                
+            </fieldset>
+
+            <fieldset>
+                <label >date of installation <input type="date" name="installation date"></label>
+            </fieldset>
+
+            <fieldset>
+                <p>which features did you find useful in the product?</p>
+                <p> (check all that apply) </p>
+                <div>features</div>
+                <label ><input type="checkbox" name="durability" value="yes" >durability</label>
+                <label ><input type="checkbox" name="ease of use" value="yes">ease of use</label>
+                <label ><input type="checkbox" name="performance" value="yes">performance</label>
+                <label ><input type="checkbox" name="design" value="yes">design</label>
+            </fieldset>
+
+            <fieldset>
+                <label >written review(optional)  <input type="text" name="review"></label>
+            </fieldset>
+
+            <fieldset>
+                <label >your name(optional) <input type="text" name="yname"></label>
+            </fieldset>
+
+            <input type="submit" value="post my review">
+           
+    
+        </form>
+    </main>
+
+    <footer>
+          <p>&copy; <span id="currentyear"></span> Karl Smith.  kenya</p>
+        <p>last modified: <span id="lastmodified"></span></p>
+    </footer>
+    
+</body>
+</html>
