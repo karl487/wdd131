@@ -1,0 +1,23 @@
+@media screen and (max-width: 460px) {
+    body {
+        padding: 0;
+    }
+
+    header, .wf2, footer {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .wf2 {
+        padding: 15px; /* Slightly tighter spacing on small mobile screens */
+    }
+
+    .rating-container {
+        max-width: 100%; /* Allows star radio row to balance perfectly on small widths */
+        gap: 5px;
+    }
+    
+    header h1 {
+        font-size: 20px; /* Scales header typography down to fit mobile viewports */
+    }
+}
