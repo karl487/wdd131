@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Travel Agency - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">KK Travel Agency</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explore The World With Us</h2>
+                <p>We create unforgettable journeys tailored just for you and your family.</p>
+                <button id="promoBtn" class="btn">Claim Holiday Discount</button>
+            </div>
+        </section>
+
+        <section class="container features">
+            <h2>Why Choose KK Travel?</h2>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <h3>Family Friendly</h3>
+                    <p>Hand-picked destinations safe and fun for all ages.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>Best Value</h3>
+                    <p>Premium travel packages scaled to fit your budget.</p>
+                </div>
+                <div class="card text-center">
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated agents are always here to help you.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript Modal Popup -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>🎉 Limited Time Offer!</h2>
+            <p>Use code <strong>KKFAMILY10</strong> to get 10% off your first booking!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 KK Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

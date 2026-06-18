@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Travel Agency - Destinations</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">KK Travel Agency</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section-header">
+            <h2>Top Family Destinations</h2>
+            <p>Find your next perfect getaway.</p>
+            <input type="text" id="destSearch" placeholder="Search destinations...">
+        </section>
+
+        <div class="grid-3" id="destGrid">
+            <div class="card dest-card" data-name="hawaii beach tropical">
+                <div class="placeholder-img">🏝️ Hawaii</div>
+                <div class="card-body">
+                    <h3>Hawaii, USA</h3>
+                    <p>Perfect tropical paradise for beach-loving families.</p>
+                </div>
+            </div>
+            <div class="card dest-card" data-name="paris europe culture">
+                <div class="placeholder-img">🗼 Paris</div>
+                <div class="card-body">
+                    <h3>Paris, France</h3>
+                    <p>Rich history, art, and iconic monuments to explore.</p>
+                </div>
+            </div>
+            <div class="card dest-card" data-name="tokyo asia city">
+                <div class="placeholder-img">🗼 Tokyo</div>
+                <div class="card-body">
+                    <h3>Tokyo, Japan</h3>
+                    <p>A dazzling mix of futuristic tech and ancient culture.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KK Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

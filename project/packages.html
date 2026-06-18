@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Travel Agency - Packages</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">KK Travel Agency</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Our All-Inclusive Travel Packages</h2>
+        
+        <div class="grid-2">
+            <div class="card">
+                <h3>📦 Family Essentials Package</h3>
+                <p>7 Days accommodation, breakfast included, airport transfers, and guided day-tours.</p>
+                <p class="price">$1,499 / family</p>
+            </div>
+            <div class="card">
+                <h3>📦 Luxury Getaway Package</h3>
+                <p>5 Days at a 5-star resort, all meals included, spa access, and private custom flights.</p>
+                <p class="price">$3,999 / couple</p>
+            </div>
+        </div>
+
+        <section class="form-section card">
+            <h3>Inquire About a Package</h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="msg">Message / Custom Needs</label>
+                    <textarea id="msg" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Inquiry</button>
+            </form>
+            <div id="formSuccess" class="success-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KK Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
